@@ -24,7 +24,10 @@ const Navbar = () => {
           onClick={() => setToggleMenu((prev) => !prev)}
         />
         {toggleMenu && (
-          <ul className="flex flex-col gap-2 justify-center items-center font-poppins absolute top-12 sidebar p-4 bg-blue-900 rounded-lg box-shadow right-4 text-white z-10">
+          <ul
+            onClick={() => setToggleMenu((prev) => !prev)}
+            className="flex flex-col gap-2 justify-center items-center font-poppins absolute top-12 sidebar p-4 bg-blue-900 rounded-lg box-shadow right-4 text-white z-10"
+          >
             {links}
           </ul>
         )}
